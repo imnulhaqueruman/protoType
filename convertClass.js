@@ -19,10 +19,14 @@ class Cricketer extends Person {
         this.type = type;
         this.country = country
     }
+    eat() { /// Polymorphism .. when child class over right parent class method then use polymorphism 
+        super.eat()
+        console.log(`${this.name} is Playing`)
+    }
     play() {
         console.log(`${this.name} is Playing`)
     }
 
 }
 const Sakib = new Cricketer("Sakib", 34, 'AllROunder', 'bang')
-Sakib.play()
+Sakib.eat()
